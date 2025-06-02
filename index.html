@@ -6,6 +6,7 @@
     <title>Criptografia e Descriptografia com Huffman</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
@@ -13,27 +14,46 @@
 
         <div class="section encrypt-section">
             <h2>Criptografar Texto</h2>
-            <textarea id="inputText" placeholder="Digite seu texto aqui..."></textarea>
+            <div class="fields-grid">
+                <div class="field-group">
+                    <h3>Seu Texto Original:</h3>
+                    <textarea id="inputText" placeholder="Digite seu texto aqui..."></textarea>
+                </div>
+                <div class="field-group">
+                    <h3>Texto Criptografado (Códigos):</h3>
+                    <div class="textarea-with-copy">
+                        <textarea id="encryptedOutput" readonly></textarea>
+                        <button class="copy-btn" data-clipboard-target="#encryptedOutput">Copiar</button>
+                    </div>
+                </div>
+                <div class="field-group">
+                    <h3>Mapa de Códigos (JSON):</h3>
+                    <div class="textarea-with-copy">
+                        <textarea id="codeMapOutput" readonly></textarea>
+                        <button class="copy-btn" data-clipboard-target="#codeMapOutput">Copiar</button>
+                    </div>
+                </div>
+            </div>
             <button id="encryptButton">Criptografar</button>
-            <div class="output-box">
-                <h3>Texto Criptografado (Códigos):</h3>
-                <textarea id="encryptedOutput" readonly></textarea>
-            </div>
-            <div class="output-box">
-                <h3>Mapa de Códigos (Para Descriptografia):</h3>
-                <textarea id="codeMapOutput" readonly></textarea>
-            </div>
         </div>
 
         <div class="section decrypt-section">
             <h2>Descriptografar Código</h2>
-            <textarea id="inputCode" placeholder="Cole o código criptografado aqui..."></textarea>
-            <textarea id="inputCodeMap" placeholder="Cole o mapa de códigos aqui (ex: {'a':'01', 'b':'10'})..."></textarea>
-            <button id="decryptButton">Descriptografar</button>
-            <div class="output-box">
-                <h3>Texto Descriptografado:</h3>
-                <textarea id="decryptedOutput" readonly></textarea>
+            <div class="fields-grid">
+                <div class="field-group">
+                    <h3>Código Criptografado:</h3>
+                    <textarea id="inputCode" placeholder="Cole o código criptografado aqui..."></textarea>
+                </div>
+                <div class="field-group">
+                    <h3>Mapa de Códigos (JSON):</h3>
+                    <textarea id="inputCodeMap" placeholder="Cole o mapa de códigos aqui (ex: {'a':'01', 'b':'10'})..."></textarea>
+                </div>
+                <div class="field-group">
+                    <h3>Texto Descriptografado:</h3>
+                    <textarea id="decryptedOutput" readonly></textarea>
+                </div>
             </div>
+            <button id="decryptButton">Descriptografar</button>
         </div>
     </div>
 

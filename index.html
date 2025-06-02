@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criptografia e Descriptografia com Huffman</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Criptografia/Descriptografia Huffman</h1>
+
+        <div class="section encrypt-section">
+            <h2>Criptografar Texto</h2>
+            <textarea id="inputText" placeholder="Digite seu texto aqui..."></textarea>
+            <button id="encryptButton">Criptografar</button>
+            <div class="output-box">
+                <h3>Texto Criptografado (Códigos):</h3>
+                <textarea id="encryptedOutput" readonly></textarea>
+            </div>
+            <div class="output-box">
+                <h3>Mapa de Códigos (Para Descriptografia):</h3>
+                <textarea id="codeMapOutput" readonly></textarea>
+            </div>
+        </div>
+
+        <div class="section decrypt-section">
+            <h2>Descriptografar Código</h2>
+            <textarea id="inputCode" placeholder="Cole o código criptografado aqui..."></textarea>
+            <textarea id="inputCodeMap" placeholder="Cole o mapa de códigos aqui (ex: {'a':'01', 'b':'10'})..."></textarea>
+            <button id="decryptButton">Descriptografar</button>
+            <div class="output-box">
+                <h3>Texto Descriptografado:</h3>
+                <textarea id="decryptedOutput" readonly></textarea>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

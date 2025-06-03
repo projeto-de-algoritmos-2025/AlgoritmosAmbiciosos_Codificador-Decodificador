@@ -13,7 +13,9 @@
 
 Este projeto implementa um codificador e decodificador utilizando o algoritmo de Huffman, uma técnica eficiente de compressão de dados baseada na frequência de ocorrência dos símbolos. O objetivo é reduzir o tamanho de arquivos de texto, codificando caracteres mais frequentes com sequências de bits menores e menos frequentes com sequências maiores. O sistema permite ao usuário inserir um texto, gerar a árvore de Huffman correspondente, visualizar a codificação de cada caractere e realizar tanto a compressão quanto a descompressão dos dados. O projeto foi desenvolvido como parte dos estudos sobre algoritmos ambiciosos, destacando a aplicação prática do algoritmo de Huffman.
 
-### **Acesse:** [https://projeto-de-algoritmos-2025.github.io/AlgoritmosAmbiciosos_Codificador-Decodificador/](https://projeto-de-algoritmos-2025.github.io/AlgoritmosAmbiciosos_Codificador-Decodificador/)
+### **Vídeo:** [https://youtu.be/cmlAm0MRszU](https://youtu.be/cmlAm0MRszU)
+
+### **Deploy:** [https://projeto-de-algoritmos-2025.github.io/AlgoritmosAmbiciosos_Codificador-Decodificador/](https://projeto-de-algoritmos-2025.github.io/AlgoritmosAmbiciosos_Codificador-Decodificador/)
 
 ## Screenshots
 
